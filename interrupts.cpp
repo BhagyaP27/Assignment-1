@@ -7,6 +7,7 @@
  */
 
 #include<interrupts.hpp>
+#include<filesystem>
 
 int main(int argc, char** argv) {
 
@@ -81,9 +82,20 @@ int main(int argc, char** argv) {
 
     }
 
-    input_file.close();
+    //to make a new execution file for each run
+    // build a unique output file name based on the trace input file
+    std::string traceFile = argv[1];
+    std::string base = std::filesystem::path(traceFile).stem().string(); // e.g. "trace1"
+    std::string outputFile = "execution_" + base + ".txt";
 
-    write_output(execution);
+    // write the accumulated execution string into that file
+    std::ofstream outfile(outputFile);
+    if (!outfile.is_open()) {
+        std::cerr << "Error: Could not open " << outputFile << std::endl;
+        return 1;
+    }
+    outfile << execution;
+    outfile.close();
 
     return 0;
 }

@@ -2,7 +2,7 @@
 50, 1, switch to kernel mode
 51, 10, context saved
 61, 1, find vector 7 in memory position 0x000E
-62, 1, load address 0X00BD into the PC
+62, 1, load address 0X00BD into the PC
 63, 5, System call handler at 0X00BD
 68, 10, context restored
 78, 1, switch to user mode
@@ -10,7 +10,7 @@
 79, 1, switch to kernel mode
 80, 10, context saved
 90, 1, find vector 7 in memory position 0x000E
-91, 1, load address 0X00BD into the PC
+91, 1, load address 0X00BD into the PC
 92, 7, ISR for device 7 at 0X00BD
 99, 10, context restored
 109, 1, switch to user mode
@@ -18,7 +18,7 @@
 210, 1, switch to kernel mode
 211, 10, context saved
 221, 1, find vector 12 in memory position 0x0018
-222, 1, load address 0X03B9 into the PC
+222, 1, load address 0X03B9 into the PC
 223, 5, System call handler at 0X03B9
 228, 10, context restored
 238, 1, switch to user mode
@@ -26,7 +26,7 @@
 239, 1, switch to kernel mode
 240, 10, context saved
 250, 1, find vector 12 in memory position 0x0018
-251, 1, load address 0X03B9 into the PC
+251, 1, load address 0X03B9 into the PC
 252, 7, ISR for device 12 at 0X03B9
 259, 10, context restored
 269, 1, switch to user mode
