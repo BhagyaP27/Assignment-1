@@ -87,7 +87,7 @@ int main(int argc, char** argv) {
     std::string traceFile = argv[1];
     std::string base = std::filesystem::path(traceFile).stem().string(); // e.g. "trace1"
     std::string outputFile = "execution_" + base + ".txt";
-
+    
     // write the accumulated execution string into that file
     std::ofstream outfile(outputFile);
     if (!outfile.is_open()) {
