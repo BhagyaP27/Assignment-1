@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
 
     /******************ADD YOUR VARIABLES HERE*************************/
     int current_time = 0;
-    int context_save_time = 20; // time to save or restore context
+    int context_save_time = 10; // time to save or restore context
 
 
     /******************************************************************/
