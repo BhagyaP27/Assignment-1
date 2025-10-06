@@ -1,0 +1,84 @@
+0, 40, CPU burst
+40, 1, switch to kernel mode
+41, 10, context saved
+51, 1, find vector 7 in memory position 0x000E
+52, 1, load address 0X00BD into the PC
+53, 5, System call handler at 0X00BD
+58, 10, context restored
+68, 1, switch to user mode
+69, 15, CPU burst
+84, 1, switch to kernel mode
+85, 10, context saved
+95, 1, find vector 9 in memory position 0x0012
+96, 1, load address 0X036C into the PC
+97, 5, System call handler at 0X036C
+102, 10, context restored
+112, 1, switch to user mode
+113, 1, I/O completion from device 7
+113, 1, switch to kernel mode
+114, 10, context saved
+124, 1, find vector 7 in memory position 0x000E
+125, 1, load address 0X00BD into the PC
+126, 7, ISR for device 7 at 0X00BD
+133, 10, context restored
+143, 1, switch to user mode
+144, 10, CPU burst
+154, 1, switch to kernel mode
+155, 10, context saved
+165, 1, find vector 12 in memory position 0x0018
+166, 1, load address 0X03B9 into the PC
+167, 5, System call handler at 0X03B9
+172, 10, context restored
+182, 1, switch to user mode
+183, 1, I/O completion from device 9
+183, 1, switch to kernel mode
+184, 10, context saved
+194, 1, find vector 9 in memory position 0x0012
+195, 1, load address 0X036C into the PC
+196, 7, ISR for device 9 at 0X036C
+203, 10, context restored
+213, 1, switch to user mode
+214, 30, CPU burst
+244, 1, switch to kernel mode
+245, 10, context saved
+255, 1, find vector 4 in memory position 0x0008
+256, 1, load address 0X0292 into the PC
+257, 5, System call handler at 0X0292
+262, 10, context restored
+272, 1, switch to user mode
+273, 5, CPU burst
+278, 1, I/O completion from device 12
+278, 1, switch to kernel mode
+279, 10, context saved
+289, 1, find vector 12 in memory position 0x0018
+290, 1, load address 0X03B9 into the PC
+291, 7, ISR for device 12 at 0X03B9
+298, 10, context restored
+308, 1, switch to user mode
+309, 20, CPU burst
+329, 1, switch to kernel mode
+330, 10, context saved
+340, 1, find vector 8 in memory position 0x0010
+341, 1, load address 0X06EF into the PC
+342, 5, System call handler at 0X06EF
+347, 10, context restored
+357, 1, switch to user mode
+358, 25, CPU burst
+383, 1, I/O completion from device 4
+383, 1, switch to kernel mode
+384, 10, context saved
+394, 1, find vector 4 in memory position 0x0008
+395, 1, load address 0X0292 into the PC
+396, 12, ISR for device 4 at 0X0292
+408, 10, context restored
+418, 1, switch to user mode
+419, 10, CPU burst
+429, 1, I/O completion from device 8
+429, 1, switch to kernel mode
+430, 10, context saved
+440, 1, find vector 8 in memory position 0x0010
+441, 1, load address 0X06EF into the PC
+442, 50, ISR for device 8 at 0X06EF
+492, 10, context restored
+502, 1, switch to user mode
+503, 50, CPU burst
